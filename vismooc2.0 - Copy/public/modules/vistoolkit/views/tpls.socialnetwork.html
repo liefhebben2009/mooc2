@@ -1,0 +1,38 @@
+<div id="graph_id" class="aside" style = "width: auto;" tabindex="-1" role="dialog" >
+    <div class="aside-dialog">
+        <div class="aside-content">
+            <div class="aside-header">
+                <button type="button" class="close" ng-click="$hide()">&times;</button>
+                <h3 class="aside-title">Forum Social Network</h3>
+            </div>
+
+
+            <div ng-show="data" class="aside-body" style="width:1600px">
+
+                <div class="col-md-6" style="height:800px">
+                    <div>
+                        <button class="btn btn-default col-md-4" ng-click="clearSelection()">Clear Selection</button>
+                        <h4 class="col-md-8">{{showInfo}}</h4>
+                    </div>
+                    <div graphgeo geodata="geodata" id="graphGeoContainer" selected-country = "selectedCountry" style="width: 100%; height:48%"></div>
+                    <div wordcloud word-cloud-data = "wordCloudData" style="width: 100%; height:48%"></div>
+                </div>
+
+                <div class="col-md-6" style="height:800px" >
+                    <div class="container" style="height:30px; width:40%">
+                        <h5 style="text-align:center">Filter users due to activeness</h5>
+                        <div ui-slider min="0" max="4" ng-model="threshold.value" ng-change="changeThreshold()"></div>
+                    </div>
+                    <div graph data = "data" option = "option" countrycode="countrycode" style="width: 100%" call-me="showTooltip">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="aside-footer">
+<!--         <button type="button" class="btn btn-default" ng-click="$hide()">Close</button>
+ -->    </div>
+</div>
+

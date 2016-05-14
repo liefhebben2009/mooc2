@@ -1,0 +1,17 @@
+<div  class="aside" style = "min-width: 40%" tabindex="-1" role="dialog">
+    <div class="aside-dialog">
+        <div class="aside-content">
+            <div class="aside-header">
+                <button type="button" class="close" ng-click="$hide()">&times;</button>
+                <h3 class="aside-title">Demographic Distribution Information</h3></div>
+            <div class="aside-body">
+                <div id="step4" geoinfo id = "demographic_id" data="demographicInfo" filter-callback = "filterByCountry" close-func = "$hide" style="height: 280px; width: 700px"  call-me="showTooltip">
+
+                </div>
+            </div>
+            <div class="aside-footer">
+                <button type="button" class="btn btn-default" ng-click="$hide()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

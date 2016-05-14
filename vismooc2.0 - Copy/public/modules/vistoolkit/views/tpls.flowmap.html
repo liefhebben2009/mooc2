@@ -1,0 +1,63 @@
+<div class="aside" style = "width:75%; height:{{windowHeight}}px" tabindex="-1" role="dialog">
+    <div class="aside-dialog">
+        <div class="aside-content">
+            <div class="aside-header">
+                <button type="button" class="close" ng-click="$hide()">&times;</button>
+                <h3 class="aside-title">Course Information</h3></div>
+            <div class="aside-body">
+
+                <div class="row clearfix">
+                    <div class="col-md-4 column">
+                        <div id="videoflow" class="videogular-container" style="margin: 0 5% 0 5%; width: 90%; height: 200px">
+                            <videogular vg-player-ready="onPlayerReady($API)" vg-theme="config.theme.url">
+                                <vg-media vg-src="config.sources" vg-tracks="config.tracks"></vg-media>
+                                <vg-controls vg-autohide="config.plugins.controls.autoHide" vg-autohide-time="config.plugins.controls.autoHideTime" style="bottom: 0;">
+                                     <vg-scrub-bar>
+                                        <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+                                    </vg-scrub-bar>
+                                </vg-controls>
+                                <vg-overlay-play></vg-overlay-play>
+                            </videogular>
+                        </div>
+                    </div>
+                    <div class="col-md-8 column">
+                        <div class="row clearfix">
+                            <div class="col-md-12 column">
+                                <div class="peak_flowmap">
+                                    <div class="peak_flowmap_container" id="flowmap_container">
+                                        <div style="width: 100%; height:100%" id="flowmap_whole">
+                                            <div class="peak_flowmap_map">
+                                                <div map data = "ClickAttackData"></div>
+                                            </div>
+                                            <div class="peak_flowmap_flow">
+                                                <div staticmap data = "ClickAttackData"></div>
+                                            </div>
+                                            <div class="flowmapin">
+                                                <input id="flowmapInput" type="range" min="0" max="{{videoLength}}" step="3" value="0" class="ng-valid ng-dirty" ng-model="videoTime" ng-mousemove="moveRes()" ng-mousedown="mouseDownRes()" ng-mouseup="mouseUpRes()">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-md-12 column">
+                                <div id="flow_stacked_id">
+                                    <nvd3 options="multiChartOptions" data="multiChartdata"></nvd3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="aside-footer">
+                <button type="button" class="btn btn-default" ng-click="$hide()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    

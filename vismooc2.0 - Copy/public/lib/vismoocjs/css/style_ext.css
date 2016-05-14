@@ -1,0 +1,177 @@
+/*body {*/
+    /*font-family: 'Esteban', serif;*/
+    /*padding-left: 50px;*/
+    /*text-align: center;*/
+/*}*/
+
+/*#main-panel td {*/
+    /*padding:5px;*/
+/*}*/
+
+/*.transparent-grid .x-grid-cell{*/
+    /*background: none;*/
+    /*border-bottom-color: #3a3a3a;*/
+    /*border-top-color: #3a3a3a;*/
+    /*color: #3a3a3a;*/
+/*}*/
+
+/* Grid cells when the mouse cursor is over the row */
+/*.transparent-grid .x-grid-row-over .x-grid-cell {*/
+    /*background: none;*/
+    /*border-bottom-color: #eee;*/
+    /*border-bottom-style: dashed;*/
+    /*border-top-color: #eee;*/
+    /*border-top-style: dashed;*/
+/*}*/
+
+/* Grid cells in the selected row */
+/*.transparent-grid .x-grid-row-selected .x-grid-cell {*/
+    /*background: none;*/
+    /*border-bottom-color: #eee;*/
+    /*border-bottom-style: solid;*/
+    /*border-top-color: #eee;*/
+    /*border-top-style: solid;*/
+/*}*/
+
+/*.transparent-td{*/
+    /*border:1px solid black;*/
+    /*background-color:#ffffff;*/
+    /*opacity:0.5;*/
+    /*background:rgba(0,0,0,0.7);*/
+    /*height: 50px;*/
+/*}*/
+
+.progressBar
+{
+    position: relative;
+    height: 20px;
+    background: #8c564b;
+    opacity: 0.5;
+}
+
+.progressBar:hover {
+    cursor: ew-resize;
+}
+#timeProgressBar
+{
+    /*padding-left: 40px;*/
+    /*padding-right: 40px;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #aaaaaa;
+    border-right: dashed 1px;
+    border-color: #000000;
+    opacity: 0.2;
+    z-index: -3;
+}
+
+/*video:hover{*/
+    /*cursor: pointer;*/
+/*}*/
+
+/*.select{*/
+    /*stroke:orange;*/
+    /*stroke-width: 2px;*/
+/*}*/
+
+/*.cover-line{*/
+    /*stroke: #000000;*/
+    /*stroke-width: 1px;*/
+    /*stroke-opacity: 0.3;*/
+/*}*/
+/*.horiLine{*/
+    /*stroke: #FFFFFF;*/
+    /*stroke-width: 3px;*/
+/*}*/
+
+/*#timeaxis{*/
+    /*stroke-width: 2px;*/
+    /*stroke: #333333;*/
+/*}*/
+
+/*.axis .domain{*/
+    /*stroke-width: 1px;*/
+    /*stroke: #333333;*/
+    /*fill: none;*/
+/*}*/
+
+/*.axis text {*/
+    /*font-size: 20px;*/
+/*}*/
+
+.nv-axis line{
+    opacity: 0.3;
+}
+
+.listtitle{
+    color: #fff;
+    background-color: #428bca;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.statisitc-icon{
+    cursor: hand;
+    /*border: 1px solid;*/
+    /*border-color:  #428bca;*/
+    /*border-radius: 5px;*/
+    /*background-color: #428bca;*/
+    /*color: #ffffff;*/
+    color: #aaaaaa;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10 auto;
+    text-align: center;
+    font-size: 12px;
+}
+
+.statisitc-icon > span{
+    font-size: 40px;
+}
+
+.statisitc-icon:hover{
+    color: #ffffff;
+    background-color: #428bca;
+}
+
+.panel-group .list-group {
+    margin: 0;
+    /*margin-bottom*/
+}
+
+.panel-group .list-group .list-group-item {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+}
+
+.panel-group .list-group .list-group-item:last-child {
+    border-bottom: none;
+}
+
+.list-group .active{
+    background-color: #428bca;
+}
+
+.progress{
+    border-radius: 0px;
+}
+
+.dash-category-label{
+    color: #ffffff;
+    margin-top: -6px;
+    background: #aaaaaa;
+
+}
+
+.dash-category-label > hr{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

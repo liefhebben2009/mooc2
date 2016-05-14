@@ -1,0 +1,47 @@
+.peak_flowmap {
+	width: 100%;
+	height: 500px;
+    word-break: break-word;
+    overflow-y: auto; 
+    overflow-x: hidden; 
+}
+
+.peak_flowmap_container {
+	position: absolute;
+	width: 90%;
+	height: 100%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#flowmap_whole {
+	/*background: none;*/
+}
+
+.peak_flowmap_map {
+	position: absolute; 
+	width: 100%;
+	height: 50%;
+	/*max-height: 320px; */
+	/*background-color: #bad2ea;*/
+}
+
+.peak_flowmap_flow {
+    width: 100%;
+    height: 100%;
+	position: absolute;
+}
+
+.flowmapin {
+	position: absolute; 
+	bottom: 10px;
+	width: 100%
+}
+
+#flow_stacked_id {
+	width: 90%;
+	margin-left: calc(5% - 80px);
+	margin-right: 5%;
+	height:300px; 
+	position:relative;
+}

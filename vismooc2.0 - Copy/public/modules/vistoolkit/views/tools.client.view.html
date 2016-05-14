@@ -1,0 +1,81 @@
+<!-- course -->
+<div class="dash-category-label">
+    <hr>Course<hr>
+</div>
+
+<div ng-show="courseInfo!=-1" class="statisitc-icon" bs-aside="window" data-template="modules/vistoolkit/views/tpls.courseinfo.html" data-container="body" data-placement="right" data-animation="am-slide-right" 
+     ng-controller="courseInfoController">
+    <span  class = "glyphicon icon-info"></span>
+    <br/>Course Info
+</div>
+
+<div ng-show="courseID!=-1" class="statisitc-icon" bs-aside="window" data-template="modules/vistoolkit/views/tpls.popinfo.html" data-container="body" data-placement="right" data-animation="am-slide-right" 
+     ng-controller="videoPopInfoController">
+    <span class = "glyphicon icon-bars"></span>
+    <br/>Popularity Info
+</div>
+
+<div ng-show="demographicInfo!=-1" class="statisitc-icon" bs-aside="window" data-template="modules/vistoolkit/views/tpls.demographicinfo.html" data-container="body" data-placement="right" data-animation="am-slide-right" 
+     ng-controller="geographicInfoController">
+    <span class = "glyphicon icon-earth"></span>
+    <br/>Demographic Info
+</div>
+
+<!-- video -->
+<div class="dash-category-label">
+    <hr>
+    Video
+    <hr>
+</div>
+
+<div ng-show="courseID!=-1 && videoID!=-1" class="statisitc-icon" bs-aside="window" data-template="modules/vistoolkit/views/tpls.temporalinfo.html" data-container="body" data-placement="right" data-animation="am-slide-right" 
+     ng-controller="temporalInfoController">
+    <span class = "glyphicon icon-calendar" ></span>
+    <br/>Temporal Info
+</div>
+
+
+<!-- forum -->
+<div class="dash-category-label">
+    <hr>
+    Forum
+    <hr>
+</div>
+
+<div ng-show="sentimentData" class="statisitc-icon" bs-aside="window" data-template="modules/vistoolkit/views/tpls.sentiment.html" data-container="body" data-placement="right" data-animation="am-slide-right" 
+     ng-controller="sentimentController" ng-click="clickFunc()">
+    <span class = "glyphicon icon-heart2" ></span>
+    <br/>Sentiment Analysis
+</div>
+
+<div ng-show="data" class="statisitc-icon" bs-aside="window" data-template="modules/vistoolkit/views/tpls.socialnetwork.html" data-container="body" data-placement="right" data-animation="am-slide-right" 
+     ng-controller="forumSocialNetworkController">
+    <span class = "glyphicon icon-bubbles" ></span>
+    <br/>Social Network
+</div>
+
+
+<!-- peak analysis -->
+<div class="dash-category-label">
+    <hr>
+    Peak
+    <hr>
+</div>
+
+<div ng-show="courseId!=-1" class="statisitc-icon" bs-aside="window" data-template="modules/vistoolkit/views/tpls.mdsglyph.html" data-container="body" data-placement="right" data-animation="am-slide-right" 
+     ng-controller="mdsGlyphController">
+    <span class = "glyphicon icon-spinner" ></span>
+    <br/>Overview
+</div>
+
+<div ng-show="courseId!=-1 && videoId!=-1" class="statisitc-icon" bs-aside="window" data-template="modules/vistoolkit/views/tpls.flowmap.html" data-container="body" data-placement="right" data-animation="am-slide-right" 
+     ng-controller="flowMapController">
+    <span class = "glyphicon icon-lightning" ></span>
+    <br/>Flowmap
+</div>
+
+<div ng-show="courseId!=-1" class="statisitc-icon" bs-aside="window" data-template="modules/vistoolkit/views/tpls.correlation.html" data-container="body" data-placement="right" data-animation="am-slide-right" 
+     ng-controller="correlationController">
+    <span class = "glyphicon icon-support" ></span>
+    <br/>Correlation
+</div>

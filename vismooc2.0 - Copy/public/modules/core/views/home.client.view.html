@@ -1,0 +1,19 @@
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- videoList, left -->
+        <div id="videolist" class="col-sm-3 col-md-3 sidebar" ng-include="'modules/content/views/videolist.client.view.html'">
+        </div>
+
+        <!-- main content, middle -->
+        <div class="col-sm-8 col-sm-offset-3 col-md-8 col-md-offset-3"  ng-include="'modules/content/views/content.client.view.html'">
+        </div>
+        
+        <!-- visualization toolkits, right -->
+        <div class="col-sm-1 col-sm-offset-11 col-md-1 col-md-offset-11 sidebar vistoolkit" ng-include="'modules/vistoolkit/views/tools.client.view.html'">
+        </div>
+
+    </div>
+</div>
+

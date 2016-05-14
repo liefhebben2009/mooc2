@@ -1,0 +1,23 @@
+                                                                                                     <section ng-controller="videoListController">
+    <h4>Course Name</h4>
+    <div class="input-group"  >
+        <select ng-model = "selectedCourse" class="form-control" ng-options="course as course.courseName for course in courseList">
+           <option value = "" >Select a Course</option>
+        </select>
+    </div>
+    <hr/>
+    <div id="{{'v_group'+$index}}" class="panel-group" ng-repeat="videoGroup in videoList track by $index">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionTwo" href="#collapse{{videoGroup.week}}">Week {{videoGroup.week}}</a>
+                </h4>
+            </div>
+            <div class="panel-collapse collapse in" id="collapse{{videoGroup.week}}">
+                <div class="list-group" ng-repeat="video in videoGroup.videos">
+                    <a ng-class="{active: selectedVideoId == video.videoId}" ng-click = "setSelected(video)" class="list-group-item" style="cursor: pointer;">{{video.title}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,31 @@
+<div class="aside" style = "width:40%" tabindex="-1" role="dialog">
+    <div class="aside-dialog">
+        <div class="aside-content">
+            <div class="aside-header">
+                <button type="button" class="close" ng-click="$hide()">&times;</button>
+                <h3 class="aside-title">Course Information</h3></div>
+            <div class="aside-body">
+
+                    <div style="width: 60%; float:left">
+                        <h3>Course Name:</h3>
+                        <strong>{{ courseInfo.courseName }}</strong>
+                        <h3>Instructor(s):</h3>
+                        <strong>{{ courseInfo.instructor }}</strong>
+                    </div>
+                    <div style="width: 30%; float:left; margin-top: 30px">
+                        <img ng-src="{{courseInfo.img}}" style="width:150px" />
+                    </div>
+                <div class="clearfix"></div>
+                <h3>Description:</h3>
+                <p>
+                    {{courseInfo.description}}
+                </p>
+            </div>
+            <div class="aside-footer">
+                <button type="button" class="btn btn-default" ng-click="$hide()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+

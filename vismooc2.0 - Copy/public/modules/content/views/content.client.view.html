@@ -1,0 +1,33 @@
+<div id="viscontent" ng-controller="contentController">
+    <div ng-show="videoSrc!=''" style="width:100%; z-index:-1">
+        <div id="timeProgressBar"></div>
+        <div class="videogular-container" style="margin: 0; width: 100%">
+            <videogular vg-player-ready="onPlayerReady($API)" vg-theme="config.theme.url" vg-update-time="onUpdateTime($currentTime, $duration)">
+                <vg-media vg-src="config.sources" vg-tracks="config.tracks"></vg-media>
+                <vg-controls vg-autohide="config.plugins.controls.autoHide" vg-autohide-time="config.plugins.controls.autoHideTime" style="bottom: 25px;">
+                    <span style="display: table; width: 100%; margin-bottom: -20px;">
+                         <vg-scrub-bar>
+                            <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+                        </vg-scrub-bar>
+                    </span>
+                    <span style="display: table; width: 100%; font-size: 20px;">
+                        <vg-play-pause-button></vg-play-pause-button>
+                        <vg-time-display>{{ currentTime | date:'mm:ss' }}</vg-time-display>
+                        
+                        <vg-time-display>{{ totalTime | date:'mm:ss' }}</vg-time-display>
+                        <vg-playback-button></vg-playback-button>
+                        <vg-fullscreen-button></vg-fullscreen-button>
+                    </span>
+                </vg-controls>
+                <vg-overlay-play></vg-overlay-play>
+            </videogular>
+        </div>
+    </div>
+    <div ng-show = "seekData" id="seekline_id"  >
+        <canvas seek-data-part="seekDataPart" seek-data="seekData" video-length="videoLength" style="height: 200px; left:0; z-index:1; width:100% " seekline call-me="showTooltip()"> </canvas>
+    </div> 
+
+    <div id="stacked_id">
+        <nvd3 options="multiChartOptions" data="multiChartdata"></nvd3>
+    </div>
+</div>
